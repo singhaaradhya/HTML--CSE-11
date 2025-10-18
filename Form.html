@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Biodata Form</title>
 </head>
 <body>
     <form action="./Response.HTML" name="Biodata" target="_blank" method="get">
@@ -12,36 +12,38 @@
             <label for="name" >name</label>
             <input type="text" id="name" name="name" placeholder="enter your name" required>
             <br><br>
-            <label for="pass">password</label>
+            <label for="password">password</label>
             <input type="password" id="password" name="password" required>
             <br><br>
             <label for="dob">DOB:</label>
-            <input type="dob" id="dob" name="dob" required>
+            <input type="data" id="dob" name="dob" required>
             <br><br>
-            <lable type="email">email</lable>
+            <label type="email">email</label>
             <input type="email" id="email" name="email" required>
             <br><br>
-            <lable for="tel">phone:</lable>
+            <label for="tel">phone:</label>
             <input type="tel" id="tel" name="tel" required>
             <br><br>
-            <lable for="gender">gender:</lable>
-            <input type="radio">male" name="gender">
+            <label for="add">address:</label>
+            <textarea name="address" id="add" rows="5" cols="30"></textarea>
+            <br><br>
+            <label for="gender">gender:</label>
+            <input type="radio" id="male" name="gender" checked>
             <label for="male">male</label>
             <input type="radio" id="female" name="gender">
-            <lable for="female">female</lable>
+            <label for="female">female</label>
             <br><br>
             <label for="check">vehicles you have:</label>
-            <input type="checkbox" id="check" name="vehicles">
+            <input type="checkbox" id="bike" name="vehicles">
             <label for="check">bike</label>
             <br><br>
-            <label for="select">select your proggraming language</label>
+            <label for="select">select your programming language</label>
             <select name="select" id="select">
             <option>select your language </option>
-           <optgroup label="proggraming language">
+           <optgroup label="programming language">
                 <option value="c++">c++</option>
                 <option value="python">python</option>
                 </optgroup>
-            </optgroup>
             <optgroup label="frontend technologies">
                 <option value="html">html</option>
                 <option value="java">java</option>
@@ -51,12 +53,12 @@
             </select>
             <br><br>
             <label for="url">url:</label>
-            <input type="url" id="url" placeholder="enetr your website adress">
+            <input type="url" id="url" placeholder="enter your website address">
             <br><br>
             <lable for="file">file upload:</lable>
             <input type="file" id="file" name="file" required>
             <br><br>
-            <lable for="appoint">appointment:</lable>
+            <label for="appoint">appointment time:</label>
             <input type="time" name="appoint" id="appoint" required>
             <br><br>
             <input type="submit">
